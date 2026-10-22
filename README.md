@@ -18,6 +18,24 @@ A Gemini-powered chat application built with Kotlin and Jetpack Compose, extende
 - **Multi-turn Context**: Maintains conversation history and sends it to the Gemini model using `startChat(history = pastContent)`.
 - **API Key Security**: Keeps keys out of VCS, supports environment variable fallback for CI, encrypts keys at rest using Android Keystore AES-256-GCM, and applies R8 code/resource shrinking in release builds.
 
+## Screenshots
+
+| Portrait Chat & Scrolling | Voice Input (STT) |
+| :---: | :---: |
+| ![Chat UI](screenshots/01_chat_screen_portrait.png) | ![Voice Input](screenshots/03_voice_input_stt.png) |
+
+| Responsive Tablet Layout (WindowSizeClass) |
+| :---: |
+| ![Tablet View](screenshots/04_responsive_tablet_layout.png) |
+
+| Dark Mode (DataStore Preference) | Light Mode |
+| :---: | :---: |
+| ![Dark Mode](screenshots/05_dark_mode_theme.png) | ![Light Mode](screenshots/06_light_mode_theme.png) |
+
+| Multi-turn Chat Context | UI Test Results (7/7 Passed) |
+| :---: | :---: |
+| ![Multi-turn Chat](screenshots/07_multiturn_chat_context.png) | ![Test Results](screenshots/08_chatscreen_test_results.jpeg) |
+
 ## Setup
 1. Obtain an API key from [Google AI Studio](https://aistudio.google.com).
 2. Copy `local.properties.example` to `local.properties` in the project root:
